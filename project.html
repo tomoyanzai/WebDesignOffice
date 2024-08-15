@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse - Case Study: Project Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .hover-underline {
+        position: relative;
+      }
+
+      .hover-underline::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .hover-underline:hover::after {
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 flex flex-col min-h-screen">
+    <header class="p-6">
+      <nav class="flex justify-between items-center">
+        <div class="text-2xl font-bold">pulse</div>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#" class="hover-underline">PROJECTS</a></li>
+          <li><a href="#" class="hover-underline">SERVICES</a></li>
+          <li><a href="#" class="hover-underline">APPROACH</a></li>
+          <li><a href="#" class="hover-underline">TEAM</a></li>
+          <li><a href="#" class="hover-underline">INSIGHTS</a></li>
+        </ul>
+        <button
+          class="border border-black px-4 py-2 hover:bg-black hover:text-white transition duration-300"
+        >
+          LET'S TALK
+          <span class="ml-2">→</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="bg-gray-100 py-20 md:py-32">
+        <div class="container mx-auto px-6">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Project Name</h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8">
+            A brief description of the project and its main goals.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+              >Web Design</span
+            >
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+              >Branding</span
+            >
+            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+              >UX/UI</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Overview -->
+      <section class="py-16">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+              <p class="text-gray-600 mb-4">
+                Describe the client's needs, the challenges faced, and the
+                overall scope of the project. Highlight the key objectives and
+                the unique aspects of this particular case.
+              </p>
+              <p class="text-gray-600">
+                Explain how your agency approached the project and what made
+                your solution stand out.
+              </p>
+            </div>
+            <div class="bg-gray-200 h-64 md:h-96">
+              <!-- Replace with actual project image -->
+              <img
+                src="/api/placeholder/800/600"
+                alt="Project Overview"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process and Solution -->
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-12 text-center">Our Process</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-4">1. Research & Strategy</h3>
+              <p class="text-gray-600">
+                Describe the initial phase of the project, including market
+                research, user analysis, and strategic planning.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-4">2. Design & Development</h3>
+              <p class="text-gray-600">
+                Explain the design process, including wireframing, prototyping,
+                and the actual development of the solution.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-4">3. Testing & Launch</h3>
+              <p class="text-gray-600">
+                Detail the testing procedures, any iterations made based on
+                feedback, and the final launch of the project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results and Testimonial -->
+      <section class="py-16">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-6">Results</h2>
+              <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Highlight key performance indicators</li>
+                <li>Mention any awards or recognition received</li>
+                <li>Describe the impact on the client's business</li>
+              </ul>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <blockquote class="text-xl italic text-gray-800">
+                "Working with Pulse Agency was a game-changer for our business.
+                Their innovative approach and attention to detail resulted in a
+                website that truly represents our brand and engages our
+                customers."
+              </blockquote>
+              <p class="mt-4 font-bold">- Client Name, Position at Company</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="bg-black text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <p class="mb-8">Let's create something amazing together.</p>
+          <button
+            class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300"
+          >
+            Get in Touch
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-100">
+      <div class="container mx-auto px-6 py-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"
+        >
+          <p class="mb-4 md:mb-0">
+            &copy; 2024 Pulse Creative Agency. All rights reserved.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-800">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-800">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

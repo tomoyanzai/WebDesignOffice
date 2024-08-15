@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARISE Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#FACC15", // Yellow-400
+              secondary: "#1F2937", // Gray-800
+              background: "#00002B", // Deep blue background
+              footer: "#00001A", // Darker blue background
+              "custom-blue": "#3B82F6",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              fadeInUp: "fadeInUp 0.5s ease-out forwards",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background text-white">
+    <!-- Header -->
+    <header
+      class="absolute top-0 left-0 right-0 z-20 flex justify-between items-center p-8"
+    >
+      <div class="text-2xl font-bold">
+        <a href="./index.html"> Logo </a>
+      </div>
+      <button
+        class="bg-primary text-secondary px-4 py-2 rounded-full text-sm hover:bg-opacity-80 transition-colors"
+      >
+        Contact Us
+      </button>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="relative h-screen">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://lipsum.app/id/39/1600x900"
+          alt="Jellyfish in deep blue water"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-background opacity-30"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 h-full flex items-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-white max-w-7xl">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+              Design and localization
+            </h1>
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6">
+              Your Gateway to Japan's Digital Landscape
+            </h2>
+            <div class="max-w-2xl">
+              <p class="text-base sm:text-lg mb-8">
+                We're a dynamic duo fusing cutting-edge web design with expert
+                English to Japanese localization. Elevate your digital presence
+                and connect with the Japanese market seamlessly.
+              </p>
+            </div>
+            <!-- <button
+              class="bg-primary text-secondary px-6 py-3 rounded-full text-sm hover:bg-opacity-80 transition-colors"
+              aria-label="Learn More About Our Services"
+            >
+              <a href="./services.html"> Learn More About Our Services </a>
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Content -->
+    <section class="bg-white text-gray-800 py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+          We transform companies<br /><span class="text-gray-500"
+            >through design innovation</span
+          >
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mb-8">
+          A full-service creative agency designing and building inventive
+          digital experiences across all platforms and brand touchpoints.
+        </p>
+        <!-- Link to Blog!  -->
+        <a
+          href="./about.html"
+          class="inline-flex items-center px-6 py-3 bg-custom-blue text-white font-bold rounded-full shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:transform hover:-translate-y-1"
+        >
+          Get to know us more
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 ml-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </a>
+        <div class="mt-16 max-w-full mx-auto overflow-hidden">
+          <div class="swiper-container h-48 sm:h-64 md:h-80 lg:h-96">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://lipsum.app/id/35/800x600"
+                  alt="Team collaboration"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://lipsum.app/id/96/800x600"
+                  alt="Creative workspace"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://lipsum.app/id/12/800x600"
+                  alt="Design innovation"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      class="container mx-auto px-6 flex-grow flex flex-col lg:flex-row py-20"
+    >
+      <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-12 lg:mb-0">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight"
+        >
+          <span
+            class="block opacity-0 animate-fadeInUp"
+            style="animation-delay: 0.2s"
+            >transforming ideas</span
+          >
+          <span
+            class="font-bold opacity-0 animate-fadeInUp"
+            style="animation-delay: 0.4s"
+            >into digital</span
+          >
+          <span
+            class="block opacity-0 animate-fadeInUp"
+            style="animation-delay: 0.6s"
+            >experiences that</span
+          >
+          <span
+            class="block opacity-0 animate-fadeInUp"
+            style="animation-delay: 0.8s"
+            >inspire action.</span
+          >
+        </h1>
+        <button
+          class="bg-primary text-secondary px-6 py-3 rounded-full text-sm hover:bg-opacity-80 transition-colors mt-8"
+        >
+          <a href="./case-study.html"> Learn More About Our Services </a>
+        </button>
+      </div>
+      <div class="w-full lg:w-1/2 pl-0 lg:pl-8">
+        <div class="space-y-12 lg:space-y-20">
+          <section>
+            <div class="flex items-center mb-6">
+              <div
+                class="bg-primary text-secondary rounded-full w-16 h-16 flex items-center justify-center text-2xl font-semibold mr-6"
+              >
+                01
+              </div>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                Discovery
+              </h2>
+            </div>
+            <p class="text-gray-300 text-lg sm:text-xl">
+              We dive deep into your brand, audience, and goals to lay the
+              foundation for success.
+            </p>
+          </section>
+
+          <section>
+            <div class="flex items-center mb-6">
+              <div
+                class="bg-primary text-secondary rounded-full w-12 h-12 flex items-center justify-center text-xl font-semibold mr-4"
+              >
+                02
+              </div>
+              <h2 class="text-3xl md:text-4xl font-bold">Strategy</h2>
+            </div>
+            <p class="text-gray-300">
+              Our team crafts a tailored approach to meet your unique challenges
+              and opportunities.
+            </p>
+          </section>
+
+          <section>
+            <div class="flex items-center mb-6">
+              <div
+                class="bg-primary text-secondary rounded-full w-12 h-12 flex items-center justify-center text-xl font-semibold mr-4"
+              >
+                03
+              </div>
+              <h2 class="text-3xl md:text-4xl font-bold">Creation</h2>
+            </div>
+            <p class="text-gray-300">
+              We bring ideas to life through innovative design and cutting-edge
+              technology.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-pagination {
+        position: static;
+        margin-top: 1rem;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #333;
+      }
+    </style>
+
+    <script>
+      // Lazy load Swiper
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiperScript = document.createElement("script");
+        swiperScript.src = "https://unpkg.com/swiper/swiper-bundle.min.js";
+        swiperScript.onload = function () {
+          var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+              },
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1.5,
+              },
+              1024: {
+                slidesPerView: 2.5,
+              },
+            },
+          });
+        };
+        document.body.appendChild(swiperScript);
+
+        var swiperStyle = document.createElement("link");
+        swiperStyle.rel = "stylesheet";
+        swiperStyle.href = "https://unpkg.com/swiper/swiper-bundle.min.css";
+        document.head.appendChild(swiperStyle);
+      });
+    </script>
+
+    <footer class="bg-footer text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Tagline -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-background font-bold text-xl mr-3"
+              >
+                A
+              </div>
+              <span class="text-xl font-semibold">CrossTalk</span>
+            </div>
+            <p class="text-gray-400 mb-6">
+              Transforming digital experiences in Japan and beyond.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Get in Touch -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">GET IN TOUCH</h3>
+            <p class="text-gray-400 mb-2">
+              <a
+                href="mailto:info@crosstalk.me"
+                class="hover:text-primary transition-colors"
+                >info@crosstalk.me</a
+              >
+            </p>
+            <p class="text-gray-400">
+              <a
+                href="tel:+81345678901"
+                class="hover:text-primary transition-colors"
+                >+81 70-2689-8596</a
+              >
+            </p>
+          </div>
+
+          <!-- Explore -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">EXPLORE</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Location -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">LOCATION</h3>
+            <p class="text-gray-400">
+              1-13-12 2F Kitaku, Marunouchi, Okayama<br />
+              Japan 700-0823
+            </p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400"
+        >
+          <p>&copy; 2024 CrossTalk. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

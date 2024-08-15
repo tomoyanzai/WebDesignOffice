@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あなたのウェブデザインサービス</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="none"
+              stroke="#4a90e2"
+              stroke-width="2"
+            />
+            <path
+              d="M30 50 L50 70 L70 30"
+              fill="none"
+              stroke="#4a90e2"
+              stroke-width="2"
+              class="checkmark"
+            />
+          </svg>
+          あなたのロゴ
+        </div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#about">私たちについて</a></li>
+          <li><a href="#blog">ブログ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-background">
+        <img
+          src="https://dummyimage.com/1920x1080/3498db/"
+          alt="Dynamic background"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Welcome to My Portfolio</h1>
+          <p>
+            I'm a passionate developer creating innovative solutions for the
+            digital world.
+          </p>
+          <div class="cta-buttons">
+            <a href="./sample.html" class="cta-button cta-primary">
+              View Projects
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="arrow-icon"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="cta-button cta-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-container">
+        <div class="about-content">
+          <h2 class="about-title">印象的なウェブ体験の創造に情熱を注ぐ</h2>
+          <p class="about-description">
+            こんにちは、[あなたの名前]です。デザインへの鋭い洞察力とデジタルマーケティングへの情熱を持つウェブ開発者です。見た目の美しさだけでなく、お客様のビジネスに実際の成果をもたらすウェブサイトの制作を信念としています。
+          </p>
+          <p class="about-description">
+            各プロジェクトに、技術的な専門知識と創造的な問題解決能力を融合させて取り組んでいます。デジタル空間でお客様が際立ち、ターゲット層と意味のある形でつながることを目指しています。
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-number">50+</div>
+              <div class="highlight-text">完了プロジェクト</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-number">98%</div>
+              <div class="highlight-text">顧客満足度</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-number">5+</div>
+              <div class="highlight-text">年の経験</div>
+            </div>
+          </div>
+          <a href="#contact" class="cta-button"
+            >素晴らしいものを一緒に作りましょう</a
+          >
+        </div>
+        <div class="about-image">
+          <img
+            src="https://via.placeholder.com/400x500"
+            alt="あなたの名前 - ウェブ開発者"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">サービス内容</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="80" height="80" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+                <rect
+                  x="30"
+                  y="30"
+                  width="40"
+                  height="40"
+                  fill="none"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+                <line
+                  x1="25"
+                  y1="25"
+                  x2="75"
+                  y2="75"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>ウェブデザイン</h3>
+            <p>お客様のニーズに合わせたカスタムデザイン</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="80" height="80" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+                <polyline
+                  points="30,50 45,65 70,40"
+                  fill="none"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>開発</h3>
+            <p>デザインを生かしたコーディング</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg width="80" height="80" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="#4a90e2"
+                  stroke-width="2"
+                />
+                <text
+                  x="50"
+                  y="60"
+                  text-anchor="middle"
+                  fill="#4a90e2"
+                  font-size="40"
+                >
+                  SEO
+                </text>
+              </svg>
+            </div>
+            <h3>SEO対策</h3>
+            <p>検索エンジン最適化によるサイトの改善</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog">
+      <div class="container">
+        <h2>インサイトとヒント</h2>
+        <div class="blog-grid">
+          <article class="blog-post">
+            <img
+              src="https://picsum.photos/id/237/300/200"
+              alt="デザインポリシー"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <div class="blog-category">デザインポリシー</div>
+              <h3 class="blog-title">
+                一貫したブランディングのための5つの重要なデザインポリシー
+              </h3>
+              <p class="blog-excerpt">
+                主要なデザインポリシーの実装が、ブランドアイデンティティを強化し、全プラットフォームでのユーザー体験を向上させる方法を学びましょう。
+              </p>
+              <a href="#" class="read-more">続きを読む</a>
+            </div>
+          </article>
+          <article class="blog-post">
+            <img
+              src="https://picsum.photos/id/189/300/200"
+              alt="SEOのヒント"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <div class="blog-category">SEOのヒント</div>
+              <h3 class="blog-title">サイトのSEO強化：実践から得た教訓</h3>
+              <p class="blog-excerpt">
+                ウェブサイトの検索ランキングを向上させ、オーガニックトラフィックを増やすために個人的に使用した実践的なSEO戦略をご紹介します。
+              </p>
+              <a href="#" class="read-more">続きを読む</a>
+            </div>
+          </article>
+          <article class="blog-post">
+            <img
+              src="https://picsum.photos/id/87/300/200"
+              alt="ウェブアクセシビリティ"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <div class="blog-category">アクセシビリティ</div>
+              <h3 class="blog-title">
+                ウェブサイトのアクセシビリティ向上：Win-Winアプローチ
+              </h3>
+              <p class="blog-excerpt">
+                ウェブアクセシビリティに焦点を当てることが、インクルーシブなデザインを確保するだけでなく、全体的なユーザー体験とSEOを改善する方法を探ります。
+              </p>
+              <a href="#" class="read-more">続きを読む</a>
+            </div>
+          </article>
+        </div>
+        <div class="view-all-posts">
+          <a href="#" class="view-all-button">全ての投稿を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="お名前" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="メールアドレス"
+            required
+          />
+          <textarea name="message" placeholder="メッセージ" required></textarea>
+          <button type="submit">送信する</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 あなたのウェブデザインサービス. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.contact {
+  padding: 100px 0;
+  background-color: var(--background-color);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #3576c4;
+}

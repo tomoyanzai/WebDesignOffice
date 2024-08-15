@@ -1,0 +1,158 @@
+.about-section {
+  padding: 80px 5%;
+  position: relative;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.about-header span {
+  color: #888;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.cta-button svg {
+  margin-left: 10px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 60px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 100px 0;
+  background-color: var(--background-color);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.about-highlights {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.highlight-item {
+  flex: 1;
+  text-align: center;
+}
+
+.highlight-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.highlight-text {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-image img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .about {
+    padding: 50px 0 0;
+  }
+
+  .about-content {
+    padding: 0 20px;
+  }
+
+  .about-header {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    padding: 0;
+  }
+}
